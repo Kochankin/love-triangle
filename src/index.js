@@ -9,14 +9,9 @@ module.exports = function getLoveTrianglesCount(preferences = []) {
     return 0;
   } else {
     for (var i = 0; i < preferences.length; i++) {
-       // if (getLoverForThird(preferences, i) ) {
-        //  break;
-      //  }
-    
-      if (getLoverForThird(preferences, i) === (i + 1)) { 
+      if (getLoverForThird(preferences, i) === (i++)) { 
         count++;   
       }
-      console.log(count);
     }
   }
     
